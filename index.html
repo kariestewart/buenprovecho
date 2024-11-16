@@ -48,27 +48,7 @@
   <span class="dot"></span> 
 </div>
 
-<script>
-let slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
 
 
  <a href="https://www.google.com/maps/place/Richmond,+VA/@37.5458101,-77.4548896,13.5z/data=!4m6!3m5!1s0x89b111095799c9ed:0xbfd83e6de2423cc5!8m2!3d37.5407246!4d-77.4360481!16zL20vMGR6dDk?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"> <img height=230 width=800 src="homepage/map.jpg" alt="map" style="transform: translate(1035px,-50px)"> </a>

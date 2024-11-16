@@ -123,3 +123,48 @@ input[type="text"], textarea {
   width: 835px;
   background-color: #dddddd;
 }
+
+<style>
+.container {
+  position: absolute; right: 20px;
+  width: auto;
+ height: auto;
+ outline: 30px solid #cd4e9d;
+ outline-offset: -50px;
+}
+
+.nooutline{
+outline: 0px;
+}
+
+
+.image {
+  opacity: 1;
+  display: block;
+  width: auto;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+</style>
